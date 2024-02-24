@@ -2,9 +2,6 @@ FROM python:3.10-slim
 
 COPY main.py /main.py
 RUN pip install flask
-RUN pip install jinja2
-RUN pip install datetime
-RUN pip install requests
 RUN pip install os
 
 ENTRYPOINT [ "python", "main.py" ]
